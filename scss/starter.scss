@@ -1,0 +1,241 @@
+// Override Bootstrap's Sass default variables
+//
+// Nearly all variables in Bootstrap are written with the `!default` flag.
+// This allows you to override the default values of those variables before
+// you import Bootstrap's source Sass files.
+//
+// Overriding the default variable values is the best way to customize your
+// CSS without writing _new_ styles. For example, change you can either change
+// `$body-color` or write more CSS that override's Bootstrap's CSS like so:
+// `body { color: red; }`.
+
+
+//
+// Bring in Bootstrap
+//
+
+// Option 1
+//
+// Import all of Bootstrap's CSS
+
+// @import "bootstrap/scss/bootstrap";
+
+// Option 2
+//
+// Import just the styles you need. Note that some stylesheets are required no matter what.
+
+@import "bootstrap/scss/functions"; // Required
+@import "bootstrap/scss/variables"; // Required
+@import "bootstrap/scss/mixins"; // Required
+
+//
+// Override Bootstrap here
+//
+
+$theme-colors: (
+  "primary": #EB4F3B,
+  "light": #FBF4F4,
+  "danger": #8A512E
+);
+
+// Toggle global options
+$enable-gradients: false;
+$enable-shadows: false;
+
+// Customize some defaults
+// $body-bg: #f5f5f5;
+// $border-radius: .4rem;
+
+
+
+// @import "bootstrap/scss/root";
+@import "bootstrap/scss/reboot"; // Required
+@import "bootstrap/scss/type";
+// @import "bootstrap/scss/images";
+// @import "bootstrap/scss/code";
+@import "bootstrap/scss/grid";
+// @import "bootstrap/scss/tables";
+// @import "bootstrap/scss/forms";
+@import "bootstrap/scss/buttons";
+@import "bootstrap/scss/transitions";
+// @import "bootstrap/scss/dropdown";
+// @import "bootstrap/scss/button-group";
+// @import "bootstrap/scss/input-group"; // Requires forms
+// @import "bootstrap/scss/custom-forms";
+// @import "bootstrap/scss/nav";
+// @import "bootstrap/scss/navbar"; // Requires nav
+// @import "bootstrap/scss/card";
+// @import "bootstrap/scss/breadcrumb";
+// @import "bootstrap/scss/pagination";
+// @import "bootstrap/scss/badge";
+// @import "bootstrap/scss/jumbotron";
+// @import "bootstrap/scss/alert";
+// @import "bootstrap/scss/progress";
+// @import "bootstrap/scss/media";
+// @import "bootstrap/scss/list-group";
+@import "bootstrap/scss/close";
+// @import "bootstrap/scss/toasts";
+@import "bootstrap/scss/modal"; // Requires transitions
+// @import "bootstrap/scss/tooltip";
+// @import "bootstrap/scss/popover";
+// @import "bootstrap/scss/carousel";
+// @import "bootstrap/scss/spinners";
+@import "bootstrap/scss/utilities";
+// @import "bootstrap/scss/print";
+
+
+//
+// Custom styles
+//
+
+body {
+//  padding: 3rem 1.5rem;
+}
+
+a {
+    color: #CCAA82;
+}
+
+// Style Bootstrap icons
+.bi {
+  fill: currentColor;
+}
+.img-fluid {
+    max-width: 100%;
+    height: auto;
+}
+.dzsparallaxer:not(.mode-oneelement) * {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.jumbotron {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    margin-bottom: 0;
+    background-color: #fff;
+  }
+  @media (min-width: 768px) {
+    .jumbotron {
+      padding-top: 6rem;
+      padding-bottom: 6rem;
+    }
+  }
+  
+  .jumbotron p:last-child {
+    margin-bottom: 0;
+  }
+  
+  .jumbotron h1 {
+    font-weight: 300;
+  }
+  
+  .jumbotron .container {
+    max-width: 40rem;
+  }
+  
+  footer {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+  }
+
+  .bg-img-hero {
+background-size: cover;
+background-repeat: no-repeat;
+background-position: top center;
+}
+.avatar-xs {
+    width: 1.75rem;
+    height: 1.75rem;
+}
+.avatar-circle {
+    border-radius: 50%;
+}
+.avatar {
+    position: relative;
+    display: inline-block;
+    width: 3.125rem;
+    height: 3.125rem;
+    border-radius: .3125rem;
+}
+.avatar-img {
+    max-width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+    object-fit: cover;
+    border-radius: .3125rem;
+}
+.avatar-circle .avatar-img {
+    border-radius: 50%;
+}
+.min-h-450rem {
+    min-height: 28.125rem;
+}
+.rounded-lg {
+border-radius: .75rem!important;
+}
+.mb-n7, .my-n7 {
+margin-bottom: -3rem!important;
+}
+.ml-n7, .mx-n7 {
+margin-left: -3rem!important;
+}
+.bottom-0 {
+bottom: 0;
+}
+.left-0 {
+left: 0;
+}
+.max-w-15rem {
+max-width: 7rem;
+}
+.z-index-n1 {
+z-index: -1;
+}
+.card {
+border-width: 0 !important;
+box-shadow: 0 12px 15px rgba(140, 152, 164, 0.1);
+}
+.team-item img {
+max-width: 12rem;
+box-shadow: 0 5px 5px 0 #adb5bd;
+}
+.mb-5, .my-5 {
+margin-bottom: 3rem!important;
+}
+.shadow-none {
+box-shadow: none!important;
+}
+  footer p {
+    margin-bottom: .25rem;
+  }
+  @media (min-width: 992px) {
+    .service-text {
+padding: 7rem !important;
+}
+    .space-bottom-lg-3, .space-lg-3 {
+        padding-bottom: 8rem!important;
+    }
+    .space-lg-3, .space-top-lg-3 {
+        padding-top: 8rem!important;
+    }
+    .column-divider-lg {
+position: relative;
+}
+    .column-divider-lg::before {
+position: absolute;
+top: 0;
+left: 0;
+height: 100%;
+border-left: .0625rem solid #e7eaf3;
+content: "";
+}
+.pl-lg-5, .px-lg-5 {
+padding-left: 2rem!important;
+}
+.team {
+padding-top: 7rem;
+padding-bottom: 7rem;
+}
+}
