@@ -89,10 +89,14 @@ $enable-shadows: false;
 //
 
 body {
-//  padding: 3rem 1.5rem;
+  // font-family: 'Montserrat', sans-serif;
 }
 
 h1, h2, h3, h4, h5 {
+  font-family: 'Acme', sans-serif;
+}
+
+.acme {
   font-family: 'Acme', sans-serif;
 }
 
