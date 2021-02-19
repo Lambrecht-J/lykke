@@ -226,35 +226,3 @@ footer {
 footer p {
   margin-bottom: 0.25rem;
 }
-@media (min-width: 992px) {
-  .service-text {
-    padding: 7rem !important;
-  }
-  .space-bottom-lg-3,
-  .space-lg-3 {
-    padding-bottom: 8rem !important;
-  }
-  .space-lg-3,
-  .space-top-lg-3 {
-    padding-top: 8rem !important;
-  }
-  .column-divider-lg {
-    position: relative;
-  }
-  .column-divider-lg::before {
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-    border-left: 0.0625rem solid #e7eaf3;
-    content: "";
-  }
-  .pl-lg-5,
-  .px-lg-5 {
-    padding-left: 2rem !important;
-  }
-  .team {
-    padding-top: 7rem;
-    padding-bottom: 7rem;
-  }
-}
