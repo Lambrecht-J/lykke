@@ -32,7 +32,8 @@
 //
 
 $theme-colors: (
-  "primary": #de8f28,
+  "primary": #2b6c7e,
+  "secondary": #de8f28,
   "light": #e7cbbc,
   "danger": #f1b484,
 );
@@ -110,6 +111,10 @@ a {
   color: #e9dccb;
 }
 
+a:hover {
+  color: #eecb59;
+}
+
 // Style Bootstrap icons
 .bi {
   fill: currentColor;
@@ -118,17 +123,11 @@ a {
   max-width: 100%;
   height: auto;
 }
-.dzsparallaxer:not(.mode-oneelement) * {
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-}
 
 .jumbotron {
   padding-top: 3rem;
   padding-bottom: 3rem;
   margin-bottom: 0;
-  background-color: #fff;
 }
 @media (min-width: 768px) {
   .jumbotron {
