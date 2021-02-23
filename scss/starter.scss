@@ -131,7 +131,8 @@ a:hover {
 }
 @media (min-width: 768px) {
   .jumbotron {
-    padding-top: 6rem;
+    margin-top: 3rem;
+    padding-top: 2rem;
     padding-bottom: 6rem;
   }
 }
@@ -145,7 +146,7 @@ a:hover {
 }
 
 .jumbotron .container {
-  max-width: 40rem;
+  //
 }
 
 footer {
@@ -153,11 +154,13 @@ footer {
   padding-bottom: 3rem;
 }
 
-.bg-img-hero {
-  background-size: cover;
+.jumbotron {
+  background-image: url('../../images/background.svg');
+  background-size: contain;
   background-repeat: no-repeat;
   background-position: top center;
 }
+
 .avatar-xs {
   width: 1.75rem;
   height: 1.75rem;
@@ -224,4 +227,9 @@ footer {
 }
 footer p {
   margin-bottom: 0.25rem;
+}
+
+.logo {
+  max-width: 20%;
+  height: auto;
 }
