@@ -158,7 +158,7 @@ footer {
   background-image: url('../../images/background.svg');
   background-size: contain;
   background-repeat: no-repeat;
-  background-position: top center;
+  background-position: right center;
 }
 
 .avatar-xs {
@@ -188,6 +188,12 @@ footer {
 .min-h-450rem {
   min-height: 28.125rem;
 }
+
+.feature {
+  max-height: 200px;
+  width: auto;
+}
+
 .rounded-lg {
   border-radius: 0.75rem !important;
 }
