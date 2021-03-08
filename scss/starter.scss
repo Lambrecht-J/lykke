@@ -165,9 +165,15 @@ footer {
 
 .jumbotron {
   background-image: url('../../images/background.svg');
-  background-size: 65%;
+  background-size: 80%;
   background-repeat: no-repeat;
-  background-position: right center;
+  background-position: right 160px;
+}
+
+@media screen and (max-width: 576px) {
+  .jumbotron {
+    background: unset;
+  }
 }
 
 .avatar-xs {
