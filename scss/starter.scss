@@ -37,6 +37,7 @@ $theme-colors: (
   "secondary": #de8f28,
   "light": #e7cbbc,
   "danger": #f1b484,
+  "info": #F4DE83,
 );
 
 
@@ -188,6 +189,14 @@ a:hover {
 
 .highlight {
   background-image: linear-gradient(-100deg,rgba(238,203,89,.3),rgba(238,203,89,.7) 95%,rgba(238,203,89,.1));
+  border-radius: 1em 0;
+  padding: 0 .35em;
+  margin: 0 -.35em;
+  white-space: nowrap;
+}
+
+.highlight-inverse {
+  background-image: linear-gradient(-100deg,rgba(231,203,188,.3),rgba(231,203,188,.7) 95%,rgba(231,203,188,.1));
   border-radius: 1em 0;
   padding: 0 .35em;
   margin: 0 -.35em;
