@@ -26,6 +26,7 @@
 @import "bootstrap/scss/functions"; // Required
 @import "bootstrap/scss/variables"; // Required
 @import "bootstrap/scss/mixins"; // Required
+@import "animate.css/animate";
 
 //
 // Override Bootstrap here
@@ -37,6 +38,22 @@ $theme-colors: (
   "light": #e7cbbc,
   "danger": #f1b484,
 );
+
+
+.feature:hover {
+  animation: bounce;
+  animation-duration: 1s;
+}
+
+.team-item img:hover {
+  animation: heartBeat;
+  animation-duration: 1s;
+}
+
+.btn:hover {
+  animation: shakeX;
+  animation-duration: 1s;
+}
 
 // Toggle global options
 $enable-gradients: false;
@@ -132,6 +149,7 @@ a:hover {
 // Style Bootstrap icons
 .bi {
   fill: currentColor;
+  vertical-align: -.125em;
 }
 .img-fluid {
   max-width: 100%;
