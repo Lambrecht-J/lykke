@@ -45,6 +45,11 @@ $theme-colors: (
   animation-duration: 1s;
 }
 
+.small-logo {
+  height: 50px;
+  width: auto;
+}
+
 .team-item img:hover {
   animation: heartBeat;
   animation-duration: 1s;
