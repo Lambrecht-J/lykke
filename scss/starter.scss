@@ -28,6 +28,14 @@
 @import "bootstrap/scss/mixins"; // Required
 @import "animate.css/animate";
 
+@media (hover: hover) {
+.btn:hover > .bi {
+    -webkit-transform: translateX(8px);
+    -ms-transform: translateX(8px);
+    transform: translateX(8px);
+}
+}
+
 //
 // Override Bootstrap here
 //
@@ -40,6 +48,12 @@ $theme-colors: (
   "info": #94a786,
 );
 
+.bg-primary-light {
+  background-image: url('../../images/yellow-bg.svg');
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
 
 .feature:hover {
   animation: bounce;
@@ -57,8 +71,8 @@ $theme-colors: (
 }
 
 .btn:hover {
-  animation: shakeX;
-  animation-duration: 1s;
+//  animation: shakeX;
+//  animation-duration: 1s;
 }
 
 // Toggle global options
