@@ -27,6 +27,7 @@
 @import "bootstrap/scss/variables"; // Required
 @import "bootstrap/scss/mixins"; // Required
 @import "animate.css/animate";
+@import "aos/dist/aos";
 
 @media (hover: hover) {
 .btn:hover > .bi {
